@@ -169,3 +169,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# my_codes: 내 연습 코드들 모아두기
+my_codes/
