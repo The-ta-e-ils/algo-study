@@ -5,10 +5,10 @@ def solution(brown, yellow):
     # brown == 2 * w + 2 * (h - 2)
     # yellow == (w - 2) * (h - 2)
     # w >= 3, h >= 3
-    summation = (brown + 4) // 2 
+    total = yellow + brown
 
-    for h in range(3, summation - 2):
-        w = summation - h
-
-        if (w - 2) * (h - 2) == yellow:
+    for h in range(3, total):
+        w = total // h
+        
+        if total == w * h and 2 * w + 2 * h == brown + 4:
             return [w, h]
